@@ -59,7 +59,7 @@ kubernetes:
     version: "0.6.0"
   romana:
     # the version of romana to use
-    version: "2.0-preview.3"
+    version: "2.0-preview.3b"
 
     # since we're using 3 hosts, this will make:
     # first IP: 10.200.0.0
