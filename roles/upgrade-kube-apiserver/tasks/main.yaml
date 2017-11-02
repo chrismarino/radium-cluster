@@ -1,0 +1,17 @@
+- name: download and extract the specified version
+  become: yes
+  get_url:
+    url: "https://storage.googleapis.com/kubernetes-release/release/v{{ kubernetes.version }}/bin/linux/amd64/kube-apiserver"
+    dest: /usr/local/bin/
+
+- name: make sure it's executable
+  become: yes
+  file:
+    path: /usr/local/bin/kube-apiserver
+    mode: "u+rwx"
+
+- name: restart the service
+  become: yes
+  service:
+    name: kube-apiserver
+    state: restarted

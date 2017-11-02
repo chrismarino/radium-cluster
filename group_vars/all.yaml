@@ -28,7 +28,7 @@ certificates:
 kubernetes:
 
   # the version of kube components that will be installed
-  version: "1.8.2"
+  version: "1.9.0-alpha.2"
 
   # the inner-cluster access IP (this IP needs to listen for requests and load-balance
   # them to the kube-apiserver's on port 6443 using TLS)
