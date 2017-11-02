@@ -6,7 +6,7 @@
 
 - name: stop all docker containers
   become: yes
-  ignore_errors: true
+  ignore_errors: yes
   shell: "docker stop $(docker ps -a -q)"
   when: docker_binary.stat.exists
 
@@ -14,3 +14,8 @@
   become: yes
   shell: "docker system prune -f"
   when: docker_binary.stat.exists
+
+- name: Unmount leftover docker volumes
+  become: yes
+  shell : umount $(mount -l | grep pods | cut -d' ' -f3)
+  ignore_errors: yes
