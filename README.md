@@ -2,6 +2,8 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
+![cluster design](./documentation/cluster-design.jpg)
+
 ## Purpose
 
 The purpose of this repository is to demonstrate the tooling I use to provision (and manage) my homelab kubernetes cluster &mdash; from scratch. This repository is an adapted approach based on Kelsey Hightower's [kubernetes the "hard" way](https://github.com/kelseyhightower/kubernetes-the-hard-way).
@@ -29,7 +31,3 @@ This cluster bootstraps 3 etcd nodes, 3 kubernetes masters and 3 kubernetes node
 | [heapster](https://github.com/kubernetes/heapster) (monitoring) | 1.4.0 |
 | [kubernetes-dashboard](https://github.com/kubernetes/dashboard) (dashboard) | 1.7.1 |
 | [rook](https://rook.io/) (storage) | 0.5.1 |
-
-### Design
-
-![cluster design](./documentation/cluster-design.jpg)
