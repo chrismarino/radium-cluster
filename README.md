@@ -22,19 +22,14 @@ This cluster bootstraps 3 etcd nodes, 3 kubernetes masters and 3 kubernetes node
 
 | Name | Version |
 |:-----|:-------:|
-| [romana](http://romana.io/) | 2.0-preview.3 |
-| [kube-dns](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns) | 1.14.4 |
-| [influxdb](https://www.influxdata.com/) | 1.3.3 |
-| [heapster](https://github.com/kubernetes/heapster) | 1.4.0 |
-| [kubernetes-dashboard](https://github.com/kubernetes/dashboard) | 1.7.1 |
-| [rook](https://rook.io/) | 0.5.1 |
+| [kubernetes](https://github.com/kubernetes/kubernetes) (all components) | 1.9.0-alpha.2 |
+| [romana](http://romana.io/) (cni) | 2.0-preview.3 |
+| [kube-dns](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns) (dns) | 1.14.4 |
+| [influxdb](https://www.influxdata.com/) (monitoring) | 1.3.3 |
+| [heapster](https://github.com/kubernetes/heapster) (monitoring) | 1.4.0 |
+| [kubernetes-dashboard](https://github.com/kubernetes/dashboard) (dashboard) | 1.7.1 |
+| [rook](https://rook.io/) (storage) | 0.5.1 |
 
-### Hardware
+### Design
 
-I built the cluster with the following hardware specifications:
-
-![hardware specs](./documentation/cluster-specs.png)
-
-### Infrastructure Design
-
-![cluster design](./documentation/cluster-design.png)
+![cluster design](./documentation/cluster-design.jpg)
