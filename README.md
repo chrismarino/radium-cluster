@@ -25,7 +25,7 @@ This cluster bootstraps 3 etcd nodes, 3 kubernetes masters and 3 kubernetes node
 | Name | Version |
 |:-----|:-------:|
 | [kubernetes](https://github.com/kubernetes/kubernetes) (all components) | 1.9.0-alpha.2 |
-| [romana](http://romana.io/) (cni) | 2.0-preview.3b |
+| [romana](http://romana.io/) (cni) | v2.0 |
 | [kube-dns](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns) (dns) | 1.14.4 |
 | [influxdb](https://www.influxdata.com/) (monitoring) | 1.3.3 |
 | [heapster](https://github.com/kubernetes/heapster) (monitoring) | 1.4.0 |
